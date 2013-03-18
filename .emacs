@@ -139,6 +139,7 @@ scroll-step 1)
 ;; 加载 xcsope
 ;; (require 'xcscope)
 ;; 在打开 c 或者 c++ 文件的时候才加载 xcsope
+(add-to-list 'load-path "~/.emacs.d/site-lisp/xcscope")
 (add-hook 'c-mode-common-hook
           '(lambda ()
              (require 'xcscope)))
